@@ -251,17 +251,12 @@ opacity: 0.6;
 
 /* HERO */
 .hero {
-  position: relative;
   padding-top: 600px;
   padding-bottom: 600px;
   background-image: url("../img/hero-bg.jpg");
   background-size: cover;
   background-position: top center;
   background-repeat:  no-repeat;
-}
-
-.hero-container {
-
 }
 
 .hero-text {
@@ -290,6 +285,181 @@ color: #fff;
 .button:active{
   opacity: 0.6;
 }
+
+.collection {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.collection-header {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 38px;
+  color: var(--brand-color);
+}
+
+.collection-lists {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: -20px;
+  margin-bottom: -20px;
+}
+
+.collection-item {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 15px 25px rgba(48, 63, 115, 0.15);
+  border-radius: 12px;
+}
+
+
+.collection-card {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-grey);
+}
+
+.collection-card-img {
+  display: block;
+  margin-bottom: 20px;
+  width: 380px;
+  height: 340px;
+  object-fit: contain;
+}
+
+.collection-card-text {
+margin: 0;
+margin-bottom: 20px;
+padding: 0;
+}
+
+.price-sale {
+  color: var(--brand-color);
+  margin-right: 10px;
+}
+
+/* SITE FOOTER */
+.site-footer {
+  background-color: var(--brand-color);
+  padding-top: 80px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.footer-top {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #fff;
+  display: flex;
+}
+
+.footer-content {
+  width: 300px;
+}
+
+.footer-content :not(:last-child) {
+  margin-right: 30px;
+}
+.footer-header {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 500;
+  border: none;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.footer-lists {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  margin:0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-payment-link {
+  display: inline-block;
+}
+
+.footer-payment-link :not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer-payment-img {
+  width: 45px;
+  height: 30px;
+  display: block;
+  object-fit: cover;
+}
+
+.footer-contact-item:not(:last-child){
+  margin-bottom: 15px;
+}
+
+.footer-contact-item::before{
+  display: inline-block;
+  margin-right: 20px;
+width: 20px;
+height: 20px;
+content: "";
+background-image: url("../img/entypo_old-phone.svg");
+}
+
+.footer-contact-item:last-child::before{
+background-image: url("../img/entypo_mail.svg");
+}
+
+
+
+.social-link {
+  display: inline-block;
+}
+
+.social-link:not(:last-child){
+  margin-right: 20px;
+}
+
+.social-img {
+  width: 25px;
+  height: 25px;
+  display: block;
+  object-fit: contain;
+}
+
+.footer-bottom-list {
+  padding-top: 20px;
+  display: flex;
+}
+.footer-bottom-item:not(:last-child){
+  margin-right: 185px;
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
